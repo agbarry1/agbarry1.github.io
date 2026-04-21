@@ -1,0 +1,155 @@
+body {
+    background-color: #ebe7e0;
+    font-family: Roboto, sans-serif;
+    font-size: 10pt;
+    font-weight: 300;
+    letter-spacing: .15em;
+    color: #100c27;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+header img {
+  width: 300px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #100c27;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 60px;
+    font-weight: 350;
+    letter-spacing: .2em;
+}
+
+nav :link {
+    color: #100c27;
+}
+
+nav :hover {
+    color: #eb2869;
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(16, 12, 39, 0.5), transparent), 
+                    url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    max-width: 800px;
+  position: relative;
+  top: 75%;
+  text-align: center;
+  color: #ebe7e0;
+}
+
+h1 {
+    font-weight: 350;
+    letter-spacing: .15em;
+    font-size: 36pt;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.description {
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+.card {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-grid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-text {
+    color: #ebe7e0;
+    font-weight: 350;
+    letter-spacing: .15em;
+    font-size: 14pt;
+    line-height: 150%;
+}
+
+.card-text:hover {
+    color: #eb2869;
+}
+
+.contact-survey {
+    font-size: 14pt;
+    color: #100c27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 60px 40px;
+}
+
+.btn {
+    background: #eb2869;
+    color: #ebe7e0;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 12pt;
+}
+
+.btn:hover {
+  background: #e94e57;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin: 80px auto;
+    font-size: 75%;
+    padding: 2em;
+}
+
+footer a {
+    font-weight: 350;
+}
