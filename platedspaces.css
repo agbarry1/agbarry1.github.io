@@ -48,7 +48,7 @@ nav :hover {
     color: #eb2869;
 }
 
-.hero {
+.homehero {
     background-image: linear-gradient(to top, rgba(16, 12, 39, 0.5), transparent), 
                     url('hero.jpg');
     background-size: cover;
@@ -57,7 +57,7 @@ nav :hover {
     margin-bottom: 40px;
 }
 
-.hero-text {
+.homehero-text {
     max-width: 800px;
   position: relative;
   top: 75%;
@@ -65,14 +65,23 @@ nav :hover {
   color: #ebe7e0;
 }
 
+.hero img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 30px auto;
+    object-fit: cover;
+}
+
 h1 {
     font-weight: 350;
     letter-spacing: .15em;
     font-size: 36pt;
+    margin-top: 0;
 }
 
 .container {
-    max-width: 550px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -140,6 +149,90 @@ h1 {
   background: #e94e57;
 }
 
+p {
+    max-width: 550px;
+    line-height: 150%;
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "img1 img1 img2"
+                         "img3 img4 img4";
+}
+
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+
+.img-grid img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+video {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-weight: 350;
+    letter-spacing: .15em;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+.spacer {
+    height: 80px;
+}
+
+.matrix-wrap { 
+    padding: 40px; 
+}
+
+.matrix-grid { 
+    display: grid; 
+    grid-template-columns: 160px 1fr 1fr; 
+    border: 1px solid #100c27; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.cell { 
+    padding: 20px 20px; 
+    border-bottom: 1px solid #100c27; 
+    border-right: 1px solid #100c27; 
+}
+
+.header { 
+    background-color: #738bab;
+    color:#ebe7e0;
+    font-weight: 350;
+    display: flex;
+    align-items: center;
+}
+
+.row-label {  
+    font-weight: 350;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -149,6 +242,7 @@ footer {
     font-size: 75%;
     padding: 2em;
 }
+
 
 footer a {
     font-weight: 350;
